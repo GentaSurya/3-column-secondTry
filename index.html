@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-color: hsl(0, 0%, 95%);
+      margin: 10px;
+    }
+    .main {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 40px;
+      font-family: "Lexend Deca", sans-serif;
+      font-weight: 400;
+    }
+
+    .title {
+      font-family: "Big Shoulders Display", sans-serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: hsl(0, 0%, 95%);
+      padding: 27px 0;
+    }
+
+    .des {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.2rem;
+      color: hsla(0, 0%, 100%, 0.75);
+      margin-bottom: 90px;
+    }
+
+    .learnMore{
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: 0;
+      font-weight: 500;
+      
+    }
+
+    .learnMore:hover, .learnMore:active {
+      cursor: pointer;
+    }
+
+    .learnMore:active {
+      border: 1.5px white solid;
+      color: white;
+      background-color: transparent;
+    }
+
+    .card {
+      background-color: black;
+      width: 250px;
+      height: 440px;
+      padding: 41px;
+    }
+
+    .one {
+      background-color: hsl(31, 77%, 52%);
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    .two {
+    background-color: hsl(184, 100%, 22%);
+    }
+
+    .three {
+      background-color: hsl(179, 100%, 13%);
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    .buttonOne {
+      color: hsl(31, 77%, 52%);
+    }
+
+    .buttonTwo {
+      color: hsl(184, 100%, 22%);
+    }
+
+    .buttonThree {
+      color: hsl(179, 100%, 13%);
+    }
+
+
+    @media (max-width: 380px) {
+      .card {
+        height: 380px;
+        width: 400px;
+      }
+
+      .one {
+        border-radius: 8px 8px 0 0;
+      }
+
+      .three {
+        border-radius: 0 0 8px 8px;
+      }
+
+      .des {
+        margin-bottom: 30px;
+        line-height: 20px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <main class="main">
+    <div class="card one">
+      <img class="image" src="images/icon-sedans.svg" alt="sedans">
+      <h1 class="title">SEDANS</h1>
+      <p class="des">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+      <button class="learnMore buttonOne">Learn More</button>
+    </div>
+    <div class="card two">
+      <img class="image" src="images/icon-suvs.svg" alt="suv">
+      <h1 class="title">SUVS</h1>
+      <p class="des">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures</p>
+      <button class="learnMore buttonTwo">Learn More</button>
+    </div>
+    <div class="card three">
+      <img class="image" src="images/icon-luxury.svg" alt="luxury">
+      <h1 class="title">LUXURY</h1>
+      <p class="des">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+      <button class="learnMore buttonThree">Learn More</button>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
